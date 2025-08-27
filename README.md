@@ -16,7 +16,7 @@ A beginner-friendly web application that converts times between different timezo
 ### Option 1: Using Live Server extension (Recommended)
 
 1. **Install Live Server Extension** (if not already installed):
-   - In Cursor, go to Extensions (Ctrl+Shift+X)
+   - Go to Extensions (Ctrl+Shift+X)
    - Search for "Live Server" by Ritwick Dey
    - Click Install
 
