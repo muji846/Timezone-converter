@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Luxon library for timezone conversions -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Timezone Converter 🌍</h1>
+            <p>Convert times between different timezones instantly</p>
+        </header>
+
+        <main class="converter-form">
+            <!-- Date and Time Input -->
+            <div class="input-group">
+                <label for="dateTime">Date & Time:</label>
+                <input type="datetime-local" id="dateTime" required>
+            </div>
+
+            <!-- From Timezone Selection -->
+            <div class="input-group">
+                <label for="fromTimezone">From Timezone:</label>
+                <select id="fromTimezone" required>
+                    <option value="">Select a timezone...</option>
+                    <option value="UTC">UTC (Coordinated Universal Time)</option>
+                    <option value="America/New_York">America/New_York (EST/EDT)</option>
+                    <option value="Europe/London">Europe/London (GMT/BST)</option>
+                    <option value="Asia/Karachi">Asia/Karachi (PKT)</option>
+                    <option value="Asia/Dubai">Asia/Dubai (GST)</option>
+                    <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                    <option value="Australia/Sydney">Australia/Sydney (AEST/AEDT)</option>
+                </select>
+            </div>
+
+            <!-- To Timezone Selection -->
+            <div class="input-group">
+                <label for="toTimezone">To Timezone:</label>
+                <select id="toTimezone" required>
+                    <option value="">Select a timezone...</option>
+                    <option value="UTC">UTC (Coordinated Universal Time)</option>
+                    <option value="America/New_York">America/New_York (EST/EDT)</option>
+                    <option value="Europe/London">Europe/London (GMT/BST)</option>
+                    <option value="Asia/Karachi">Asia/Karachi (PKT)</option>
+                    <option value="Asia/Dubai">Asia/Dubai (GST)</option>
+                    <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                    <option value="Australia/Sydney">Australia/Sydney (AEST/AEDT)</option>
+                </select>
+            </div>
+
+            <!-- Convert Button -->
+            <button type="button" id="convertBtn" class="convert-btn">Convert Time</button>
+
+            <!-- Result Display -->
+            <div class="result-container" id="resultContainer" style="display: none;">
+                <h3>Converted Time:</h3>
+                <div class="result-display" id="resultDisplay"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built by Mujtaba Aamer, with HTML, CSS, JavaScript & Luxon</p>
+        </footer>
+    </div>
+
+    <!-- Link to our JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
